@@ -1,0 +1,12 @@
+name: global_assert
+version: 1.0.0
+homepage: https://github.com/cmc5788/global_assert
+description: A micro-library that makes it easy to do build-time assertions about constants so that misconfigured apps fail at build-time instead of failing at runtime.
+
+environment:
+  sdk: '>=2.15.0-0 <3.0.0'
+
+dev_dependencies:
+  lints: ^1.0.0
+  path: ^1.8.1
+  test: ^1.16.0
