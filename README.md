@@ -1,5 +1,6 @@
 A micro-library for asserting at build time.
 
+[![pub package](https://img.shields.io/pub/v/global_assert.svg)](https://pub.dev/packages/global_assert)
 [![Build Status](https://github.com/cmc5788/global_assert/workflows/build/badge.svg)](https://github.com/cmc5788/global_assert/actions)
 
 It's a common practice to configure a Dart app using `const` (build-time) values. There are benefits to this approach, such as enabling [tree shaking](https://github.com/dart-lang/sdk/issues/33920) of unused code.
