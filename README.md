@@ -35,7 +35,7 @@ The Dart compiler invokes annotation constructors at compile-time. This micro-li
 
 ### Why not allow an assert without a message?
 
-Unfortunately, Dart doesn't treat an assert with a null message the same as an assert without any message at all. This means that we would need two constructors for `@Assert` to enable both messageless asserts and asserts with messages. Instead, we made the design choice when creating this micro-library that `@Assert` should require a non-null message. This enforces more meaningful compilation failure messages.
+Unfortunately, [Dart doesn't treat an assert with a null message the same as an assert without any message at all](https://github.com/dart-lang/sdk/issues/47994). This means that we would need two constructors for `@Assert` to enable both messageless asserts and asserts with messages. Instead, we made the design choice when creating this micro-library that `@Assert` should require a non-null message. This enforces more meaningful compilation failure messages.
 
 ### Will this always be needed?
 
