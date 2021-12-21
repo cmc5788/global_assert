@@ -29,6 +29,10 @@ void main() {
 
 ## FAQ
 
+### 🤔 How does this even work?!
+
+The Dart compiler invokes annotation constructors at compile-time. This micro-library takes advantage of that to "trick" the compiler into allowing build-time asserts that can be placed (almost) anywhere. Special thanks to [Kyle Turney](https://github.com/kturney) for the inspiration behind this approach.
+
 ### Why not allow an assert without a message?
 
 Unfortunately, Dart doesn't treat an assert with a null message the same as an assert without any message at all. This means that we would need two constructors for `@Assert` to enable both messageless asserts and asserts with messages. Instead, we made the design choice when creating this micro-library that `@Assert` should require a non-null message. This enforces more meaningful compilation failure messages.
